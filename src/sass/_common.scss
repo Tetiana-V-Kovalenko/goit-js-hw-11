@@ -1,0 +1,47 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+input{
+    margin: 10px;
+    outline: none;
+}
+.search-form{
+    position: fixed;
+background-color: blue;
+width: 100vw;
+height: 50px;
+display: flex;
+justify-content: center;
+}
+button{
+    margin: 10px; 
+}
+.gallery{
+    padding: 60px 10px 10px;
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+}
+.photo-card{
+    width: calc((100% - 60px)/4);
+    box-shadow: 5px 3px 3px grey;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+img{
+    display: block;
+    width: 100%;
+}
+.info{
+display: flex;
+justify-content: space-around;
+}
+.info-item{
+    max-width: calc(100%/4);
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 5px;
+}
