@@ -1,7 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-// body {
-//   align-items: center;
-// }
+body {
+  text-align: center;
+}
 input {
   margin-top: 5px;
   outline: none;
@@ -61,13 +61,14 @@ img {
   gap: 5px;
 }
 .load-more {
-  display: block;
+  // margin-right: auto;
+  // margin-left: auto;
+  // display: block;
+  margin-bottom: 10px;
   padding: 8px 16px;
   border-radius: 5px;
   background-color: blue;
   color: #ffffff;
   border: none;
   outline: none;
-  margin-right: auto;
-  margin-left: auto;
 }

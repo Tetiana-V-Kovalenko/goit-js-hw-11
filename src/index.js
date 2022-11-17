@@ -10,10 +10,13 @@ const searchForm = document.querySelector('.search-form');
 const galleryContainer = document.querySelector('.gallery');
 const btnLoadMore = document.querySelector('.load-more');
 const pixabayApiService = new PixabayApiService();
-btnLoadMore.hidden = true;
+
 searchForm.addEventListener('submit', onSearchSubmit);
 btnLoadMore.addEventListener('click', onLoadMoreClick);
 const lightbox = new SimpleLightbox('.gallery a');
+
+btnLoadMore.hidden = true;
+
 async function onSearchSubmit(e) {
   e.preventDefault();
 
