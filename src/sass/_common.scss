@@ -1,47 +1,73 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-input{
-    margin: 10px;
-    outline: none;
+// body {
+//   align-items: center;
+// }
+input {
+  margin-top: 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  max-height: 80%;
 }
-.search-form{
-    position: fixed;
-background-color: blue;
-width: 100vw;
-height: 50px;
-display: flex;
-justify-content: center;
-}
-button{
-    margin: 10px; 
-}
-.gallery{
-    padding: 60px 10px 10px;
-display: flex;
-gap: 20px;
-flex-wrap: wrap;
-}
-.photo-card{
-    width: calc((100% - 60px)/4);
-    box-shadow: 5px 3px 3px grey;   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
+.search-form {
+  position: fixed;
+  background-color: blue;
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  justify-content: center;
 }
-img{
-    display: block;
-    width: 100%;
+.search-btn {
+  margin-top: 5px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  max-height: 80%;
+  background-image: url(../images/search.svg);
+  background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 40px;
 }
-.info{
-display: flex;
-justify-content: space-around;
-}
-.info-item{
-    max-width: calc(100%/4);
 
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 5px;
+.gallery {
+  padding: 60px 10px 10px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.photo-card {
+  width: calc((100% - 60px) / 4);
+  box-shadow: 5px 3px 3px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+.info-item {
+  max-width: calc(100% / 4);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.load-more {
+  display: block;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: blue;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  margin-right: auto;
+  margin-left: auto;
 }
